@@ -1,0 +1,19 @@
+{
+  "name": "refactor-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMarinsa/refactor-kata.git"
+  },
+  "author": "David Marin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DMarinsa/refactor-kata/issues"
+  },
+  "homepage": "https://github.com/DMarinsa/refactor-kata#readme"
+}
