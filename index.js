@@ -1,5 +1,3 @@
-const assert = require("assert");
-
 const Node = (operator, value, left, right) => {
   const result = function () {
     if (this.operator === '+') {
