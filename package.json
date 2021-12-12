@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest index.test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DMarinsa/refactor-kata/issues"
   },
-  "homepage": "https://github.com/DMarinsa/refactor-kata#readme"
+  "homepage": "https://github.com/DMarinsa/refactor-kata#readme",
+  "dependencies": {
+    "jest": "^27.4.4"
+  }
 }
