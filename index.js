@@ -2,18 +2,23 @@ const assert = require("assert");
 
 const Node = (operator, value, left, right) => {
   const result = function () {
-    switch (this.operator) {
-      case "+":
-        return left.result() + right.result();
-      case "-":
-        return left.result() - right.result();
-      case "x":
-        return left.result() * right.result();
-      case "÷":
-        return left.result() / right.result();
-      default:
-        return value;
+    if (this.operator === '+') {
+      return left.result() + right.result();
     }
+
+    if (this.operator === '-') {
+      return left.result() - right.result();
+    }
+
+    if (this.operator === 'x') {
+      return left.result() * right.result();
+    }
+
+    if (this.operator === '÷') {
+      return left.result() / right.result();
+    }
+
+    return value;
   };
 
   const toString = function () {
