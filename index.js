@@ -13,7 +13,12 @@ const Node = (operator, value, left, right) => {
     }
 
     if (this.operator === '÷') {
-      return left.result() / right.result();
+      const leftResult = left.result();
+      const rightResult = right.result();
+      if (rightResult === 0) {
+        throw new Error('Cannot divide by zero');
+      }
+      return leftResult / rightResult;
     }
 
     if (typeof value !== 'number') {

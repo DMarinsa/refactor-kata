@@ -8,6 +8,16 @@ describe('given a Node', () => {
 
     expect(act).toThrow();
   })
+
+  it('should throw an error if divided by zero', () => {
+    const someNumberNode = Node("", 10, null, null);
+    const zeroNode = Node("", 0, null, null);
+    const divisionNode = Node("÷", null, someNumberNode, zeroNode);
+
+    const act = () => { divisionNode.result() } 
+
+    expect(act).toThrow();
+  })
 });
 
 describe('given a tree', () => {
