@@ -16,6 +16,10 @@ const Node = (operator, value, left, right) => {
       return left.result() / right.result();
     }
 
+    if (typeof value !== 'number') {
+      throw new Error('value must be a number or Node');
+    }
+
     return value;
   };
 
